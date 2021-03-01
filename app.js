@@ -7,3 +7,12 @@ const helloWorld = new Vue({
         message: "This is my vue template"
     }
 });
+
+const example = new Vue({
+    el: '#example',
+    data: {
+        title: "Hi",
+        message: "This is your daily message",
+        name: 'Chewie'
+    }
+});
