@@ -13,6 +13,10 @@ const example = new Vue({
     data: {
         title: "Hi",
         message: "This is your daily message",
-        name: 'Chewie'
+        name: 'Chewie',
+        img: {
+            src:'https://placeimg.com/200/200/animals',
+            alt: 'A placeholder image for animals'
+        }
     }
 });
