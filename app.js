@@ -18,5 +18,11 @@ const example = new Vue({
             src:'https://placeimg.com/200/200/animals',
             alt: 'A placeholder image for animals'
         }
+    },
+    methods: {
+        sayHello: function() {
+            alert(this.title);
+            alert(example.title);
+        }
     }
 });
