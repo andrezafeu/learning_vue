@@ -12,10 +12,12 @@
         <h1>{{ title }}</h1>
         <p>{{ message }}</p>
     </div>
-        <div id="example">
-        <h1 v-text="title"></h1>
-        <img v-bind:src="img.src" v-bind:alt="img.alt">
-        <img :src="img.src" :alt="img.alt">
+    <div id="example">
+        <h1 v-on:click="toggleImages" v-text="title"></h1>
+        <div id="exampleImages" v-show="showImages">
+            <img v-bind:src="img.src" v-bind:alt="img.alt">
+            <img :src="img.src" :alt="img.alt">
+        </div>
         <h1 v-on:click="sayHello">{{ title }}, {{ name.toUpperCase()}}</h1>
         <p @click="sayHello">{{ message }}</p>
     </div>
